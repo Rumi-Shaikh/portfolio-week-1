@@ -68,17 +68,31 @@ nav {
 }
 
 /* Mobile Version */
+/* Make all sections centered on mobile */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    section {
+        padding: 50px 5%;
+        text-align: center;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 50px;
+    }
+
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 }
 
@@ -317,3 +331,4 @@ nav {
     background: #F7C02B;
     color: black;
 }
+
