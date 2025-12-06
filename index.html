@@ -12,18 +12,24 @@
 
     <!-- ========================= HEADER ========================= -->
     <header>
-        <nav>
-            <div class="logo">Rumana Shaikh - Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certs">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <h2 class="logo">Rumana Shaikh - Portfolio</h2>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <!-- Menu Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
 
     
 
@@ -203,7 +209,7 @@
 </div>
 
 <div class="project-card">
-    <img src="task-manager.png" alt="Task Manager" class="project-img">
+    <img src="task-manager.png" alt="Women Safety Analytics" class="project-img">
     <h3>Task Manager</h3>
     <p>A simple and interactive Task Manager built using HTML, CSS, and JavaScript that allows users to add, delete, and mark tasks as complete, with data stored in localStorage.</p>
     <a href="https://github.com/Rumi-Shaikh/Task-Manager---week-2.git" class="git-btn">View on GitHub</a>
@@ -270,10 +276,13 @@
             <button type="submit">SEND MESSAGE</button>
         </form>
     </section>
+    <script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 
 </body>
 
 </html>
-
-
-
