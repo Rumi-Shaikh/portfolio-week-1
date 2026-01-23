@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,7 +75,7 @@
                     <p><strong>📧 Email:</strong> shaikh986rumana@gmail.com</p>
                 </div>
 
-                <a href="Rumana Shaikh Resume.pdf" download class="resume-btn">Download Resume</a>
+                <a href="https://drive.google.com/drive/folders/1fhBK6Wh4sr4N2s1DnhENKRBnF73Hyac-" target="_blank" class="resume-btn">Download Resume</a>
             </div>
         </div>
     </section>
@@ -272,10 +274,12 @@
     <section id="contact" class="contact">
         <h2>CONTACT ME</h2>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="196cd091-ff82-455e-95fe-a19d99a5c5a5">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">SEND MESSAGE</button>
         </form>
     </section>
@@ -289,4 +293,3 @@ function toggleMenu() {
 </body>
 
 </html>
-
